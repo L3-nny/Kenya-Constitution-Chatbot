@@ -39,7 +39,7 @@ To run this project, you need to have Python installed on your machine. Follow t
 2. Run the cells sequentially to extract and process the text from the Kenya Constitution.
 3. Use the provided examples to query specific sections of the constitution. You can modify the example queries or input your own questions.
 
-python
+#python
 user_query = "What is the supremacy of the constitution?"
 answer = answer_question_nlp(user_query, sections, qa_mapping)
 print(answer)
@@ -56,7 +56,7 @@ Submit a pull request to the main repository.
 If you have suggestions for improvements or new features, please feel free to open an issue or submit a pull request.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](license.txt) file for more details.
 
 ## Acknowledgments
 - [spaCy](https://spacy.io/) for natural language processing capabilities.
