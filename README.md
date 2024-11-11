@@ -46,7 +46,14 @@ print(answer)
 
 
 ## Contributing
-Contributions to this project are welcome! If you have suggestions for improvements or new features, please feel free to open an issue or submit a pull request.
+Contributions to this project are welcome! Here’s how you can contribute:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes.
+Push to your fork (git push origin feature-branch).
+Submit a pull request to the main repository.
+If you have suggestions for improvements or new features, please feel free to open an issue or submit a pull request.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.

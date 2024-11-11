@@ -159,12 +159,10 @@ async def handle_message(update: Update, context: CallbackContext) -> None:
     user_query = update.message.text
     logging.info(f"Received message: {user_query}")
     answer = answer_question_nlp(user_query)
-    logging.debug(f"Answer generated: {answer}")
     await update.message.reply_text(answer)
 
 # Main function to set up the bot
 async def main() -> None:
-    logging.info("Starting bot...")
     # Initialize the application and start the bot
     application = ApplicationBuilder().token(bot_token).build()
     
