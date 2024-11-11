@@ -46,9 +46,11 @@ answer = answer_question_nlp(user_query, sections, qa_mapping)
 
 print(answer)
 
+## Output in the Notebook
 ![Output on Notebook](https://github.com/L3-nny/Kenya-Constitution-Chatbot/blob/main/img1/Query%20output%20on%20notebook.jpg)
 
-![Output on Telegram](img2/Query outbook on Telegram.jpg)
+## Output in Telegram
+![Output on Telegram](https://github.com/L3-nny/Kenya-Constitution-Chatbot/blob/main/img2/Query%20output%20on%20Telegram.jpg)
 
 ## Contributing
 Contributions to this project are welcome! Here’s how you can contribute:
