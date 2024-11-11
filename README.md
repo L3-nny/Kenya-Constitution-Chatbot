@@ -1,61 +1,43 @@
-# Kenya Constitution Chatbot Project
+Kenya Constitution Chatbot
+This project is designed to create a chatbot that can answer questions about the Kenya Constitution using Natural Language Processing (NLP) techniques. The chatbot extracts and processes text from the Kenya Constitution PDF to provide accurate and real-time responses to user queries.
+Table of Contents
+Business Understanding
+2. Data Understanding
+3. Data Preparation
+Modeling
+5. Evaluation
+6. Deployment
+Usage
+Contributing
+9. License
+Business Understanding
+The Constitution of Kenya is a critical document that outlines the structure of government, the rights and duties of citizens, and the principles guiding the rule of law. However, many citizens face challenges in accessing and understanding it due to its complex legal language. This project aims to bridge this gap by developing a user-friendly question-answering system that simplifies access to constitutional knowledge.
+Objectives
+Create a User-Friendly Interface: Develop an intuitive interface for seamless interaction with the Q&A system.
+Improve Legal Literacy: Educate users about their constitutional rights and responsibilities.
+Support Legal Practitioners: Assist legal professionals in retrieving relevant constitutional information quickly.
+Leverage NLP Techniques: Use advanced NLP to interpret questions and match them with the appropriate sections of the Constitution.
 
-## Overview
-The Kenya Constitution Analysis Project is a Jupyter Notebook-based application designed to extract, process, and analyze the text of the Kenya Constitution from a PDF file. This project leverages natural language processing (NLP) techniques to enable users to query specific sections of the constitution, making it a valuable tool for legal studies, civic education, and research.
-
-## Features
-- **PDF Text Extraction**: Extracts text from specified pages of the Kenya Constitution PDF using `pdfplumber`.
-- **Text Processing**: Organizes the extracted text into structured chapters and sections for easy access.
-- **Natural Language Processing**: Utilizes `spaCy` for preprocessing user queries, including lemmatization and stopword removal.
-- **Question Answering System**: Allows users to ask questions related to specific sections of the constitution and receive relevant answers.
-- **Synonym Mapping**: Enhances query recognition by mapping synonyms to key terms in the constitution.
-
-## Installation
-To run this project, you need to have Python installed on your machine. Follow these steps to set up the environment:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/kenya-constitution-analysis.git
-   cd kenya-constitution-analysis
-   ```
-
-2. **Install the required libraries**:
-   You can install the necessary libraries using pip. Run the following command:
-   ```bash
-   pip install spacy pdfplumber pyspellchecker
-   ```
-
-3. **Download the spaCy model**:
-   You will also need to download the English language model for spaCy:
-   ```bash
-   python -m spacy download en_core_web_sm
-   ```
-
-4. **Add the Kenya Constitution PDF**:
-   Place the Kenya Constitution PDF file in the project directory and update the file path in the notebook accordingly.
-
-## Usage
-1. Open the Jupyter Notebook in your preferred environment (e.g., Jupyter Lab, Jupyter Notebook).
-2. Run the cells sequentially to extract and process the text from the Kenya Constitution.
-3. Use the provided examples to query specific sections of the constitution. You can modify the example queries or input your own questions.
-
-python
-user_query = "What is the supremacy of the constitution?"
-answer = answer_question_nlp(user_query, sections, qa_mapping)
-print(answer)
-
-
-## Contributing
-Contributions to this project are welcome! If you have suggestions for improvements or new features, please feel free to open an issue or submit a pull request.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## Acknowledgments
-- [spaCy](https://spacy.io/) for natural language processing capabilities.
-- [pdfplumber](https://github.com/jsvine/pdfplumber) for PDF text extraction.
-- [pyspellchecker](https://github.com/bjh21/python-spellchecker) for spelling correction.
-
-
-
-
+Data Understanding
+Data Source: The primary data source is the full PDF of the Kenyan Constitution.
+Content and Structure Analysis: The document contains 18 chapters, each addressing distinct themes such as judicial authority, human rights, and governance.
+Data Preparation
+Text Extraction: Using pdfplumber, the text is extracted while maintaining the original structure.
+Text Cleaning and Preprocessing: Includes tokenization, stopword removal, and lemmatization.
+Synonym and Keyword Mapping: A dictionary is created to map legal terms to layperson synonyms.
+Modeling
+The core functionality is the Question-Answering Mechanism, which uses NLP and Natural Language Understanding (NLU) to interpret user queries and retrieve relevant constitutional sections.
+Key Techniques
+Named Entity Recognition (NER): Identifies essential entities in user queries.
+Semantic Similarity Scoring: Matches terms with similar or alternative wording.
+Query Expansion: Captures synonyms and related terms to broaden understanding.
+Evaluation
+Testing and Accuracy: Sample questions are tested to ensure accurate retrieval of relevant sections.
+User Feedback: Feedback collected via Telegram helps refine the system.
+Deployment
+Telegram Integration: The chatbot is deployed on Telegram, allowing users to interact in a familiar environment.
+Real-time Response: The system processes queries and responds with the best-matching constitutional article.
+Usage
+To use the chatbot, simply ask questions about the Kenya Constitution via the Telegram interface. The system will process your query and provide the most relevant section from the Constitution.
+Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
