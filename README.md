@@ -46,7 +46,7 @@ answer = answer_question_nlp(user_query, sections, qa_mapping)
 
 print(answer)
 
-![Output on Notebook](Query output on notebook.jpg)
+![Output on Notebook](https://github.com/L3-nny/Kenya-Constitution-Chatbot/blob/main/img1/Query%20output%20on%20notebook.jpg)
 
 ![Output on Telegram](img2/Query outbook on Telegram.jpg)
 
