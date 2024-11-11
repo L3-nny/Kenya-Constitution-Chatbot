@@ -15,3 +15,5 @@ bot-env/
 *.log
 
 # Other files or directories to ignore (add any other specific files you want to ignore)
+__pycache__/
+bot-env/
