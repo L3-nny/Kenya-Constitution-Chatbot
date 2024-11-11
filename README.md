@@ -41,7 +41,9 @@ To run this project, you need to have Python installed on your machine. Follow t
 
 ### Example
 user_query = "What is the supremacy of the constitution?"
+
 answer = answer_question_nlp(user_query, sections, qa_mapping)
+
 print(answer)
 
 
