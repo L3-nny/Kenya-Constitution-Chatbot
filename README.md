@@ -46,9 +46,9 @@ answer = answer_question_nlp(user_query, sections, qa_mapping)
 
 print(answer)
 
-![Output on Notebook](img1)
+![Output on Notebook](Query output on notebook.jpg)
 
-![Output on Telegram](img2)
+![Output on Telegram](img2/Query outbook on Telegram.jpg)
 
 ## Contributing
 Contributions to this project are welcome! Here’s how you can contribute:
